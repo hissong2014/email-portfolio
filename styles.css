@@ -1,0 +1,124 @@
+main{
+  margin-left:30%;  
+  width:70%;
+  background:rgb(238, 236, 236);
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.mobileView{
+    display:none;
+    height:0;
+}
+
+main img{
+    display:block;
+}
+nav{
+    position:fixed;
+    width:30%;
+    padding:3px;
+}
+
+.name{
+    font-size: 30px;
+    padding:20px;
+    color:#140b03;
+}
+.project{
+    width:600px;
+    margin:0 auto;
+    background:#ffffff;
+}
+
+.dynamic{
+    border:5px solid green;
+    margin-bottom:5px; 
+}
+
+.dynamic div{
+    padding:10px 30px;
+}
+
+
+img{
+    width:100%;
+}
+
+button{
+    background:none;
+    border-radius:2px;
+    font-size:16px;
+    padding:5px 15px;
+    cursor:pointer;
+    color:#140b03;
+    
+}
+
+.active-button{
+    background:#eed6c2;
+    border:none;
+    cursor:default;
+}
+
+.bold span{
+    font-weight:bold;
+}
+
+nav button{
+    display:block;
+    width:99%;
+    text-align: left;
+    margin-bottom:3px;
+}
+
+.sender{
+    font-size:18px;
+}
+
+.subjectline{
+    font-size:14px;
+}
+
+.preheader{
+    font-size:12px;
+}
+
+h3{
+    font-weight:bold;
+}
+
+.dynamic p{
+    padding-bottom:5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    main{
+        margin-left:0%;  
+        width:100%;
+      }
+   
+      nav{
+          position:relative;
+          width:100%;
+      }
+
+      .mobileView{
+        display:block;
+        height:auto;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .project{
+        width:100%;
+    }
+    img{
+        width:100%;
+    }
+
+
+}

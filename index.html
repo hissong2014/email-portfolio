@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Jason Hissong Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <h1 class="name">Jason Hissong</h1>
+        
+ 
+        <button onclick="showProject1()" class="project1button active-button">
+            <span class="sender">OZNATURALS</span><br>
+            <span class=subjectline">Eye Cream</span><br>
+            <span class="preheader">An email a part of an automated campaign which triggered if an individual visited the website and if they were not part of the campaign within the last 30 days. </span>
+        </button>
+        <button class="project2button" class="bold" onclick="showProject2()">
+            <span class="sender">Lazartigue</span><br>
+            <span class="subjectline">Welcome</span><br>
+            <span class="preheader">The first email in the Welcome Series.</span>
+        </button>
+        <button class="project3button" class="bold" onclick="showProject3()">
+            <span class="sender">Pupa Milano</span><br>
+            <span class="subjectline">Eye Love To Save!</span><br>
+            <span class="preheader">One time email deployment supporting a marketing initiative.</span>
+        </button>
+
+        
+    </nav>
+    <main id="emailBackground">
+        <section id="project1" class="project">
+            <img src="images/ozn-header.png" alt="">
+            <div class="dynamic">
+                <div>
+                    <h3>Dynamic Block</h3>
+                    <p>Image displayed determined by age.</p>
+                    <button id="belowHeroButton" onclick="showBelowHero()">35 &amp; Below</button>
+                    <button id="aboveHeroButton" onclick="showOverHero()">Over 35</button>
+                </div>
+                <img id="below-hero" src="images/ozn-35-below-hero.png" alt="">
+                <img id="over-hero" src="images/ozn-35-over-hero.png" alt="">
+            </div>
+            
+            <div class="dynamic">
+                <div>
+                    <h3>Dynamic Block</h3>
+                    <p>Image displayed determined by age.</p>
+                    <button id="belowProductButton" onclick="showBelowProduct()">35 &amp; below</button>
+                    <button id="aboveProductButton" onclick="showOverProduct()">Over 35</button>
+                </div>
+                <img id="below-product" src="images/ozn-35-below-product.png" alt="">
+                <img id="over-product" src="images/ozn-35-over-product.png" alt="">
+            </div>
+            
+            <img src="images/ozn-footer.png" alt="">
+        </section>
+        <section id="project2" class="project">
+            <img src="images/lazartigue.jpg" alt="">
+        </section>
+        <section id="project3" class="project">
+            <img src="images/pupa-header.png" alt="">
+            <div class="dynamic">
+                <div>
+                    <h3>Dynamic Block</h3>
+                    <p>Products shown based on individual's most likely preferred in category.</p>
+                </div>
+                <img id="below-product" src="images/pupa-products.png" alt="">
+                
+            </div>
+            <img src="images/pupa-footer.png" alt="">
+        </section>
+    </main>
+    <nav class="bottomMobile">
+            <button onclick="showProject1()" class="project1button active-button">
+                <span class="sender">OZNATURALS</span><br>
+                <span class=subjectline">Eye Cream</span><br>
+                <span class="preheader">An email a part of an automated campaign which triggered if an individual visited the website and if they were not part of the campaign within the last 30 days. </span>
+            </button>
+            <button class="project2button" class="bold" onclick="showProject2()">
+                <span class="sender">Lazartigue</span><br>
+                <span class="subjectline">Welcome</span><br>
+                <span class="preheader">The first email in the Welcome Series.</span>
+            </button>
+            <button class="project3button" class="bold" onclick="showProject3()">
+                <span class="sender">Pupa Milano</span><br>
+                <span class="subjectline">Eye Love To Save!</span><br>
+                <span class="preheader">One time email deployment supporting a marketing initiative.</span>
+            </button>
+
+        
+        </nav>
+</body>
+</html>
