@@ -1,23 +1,62 @@
-main{
-  margin-left:30%;  
-  width:70%;
-  background:rgb(238, 236, 236);
-  padding-top:15px;
-  padding-bottom:15px;
-}
-
-.mobileView{
-    display:none;
-    height:0;
-}
-
-main img{
-    display:block;
-}
 nav{
     position:fixed;
     width:30%;
-    padding:3px;
+    padding:10px;
+}
+
+nav button{
+    display:inline-block;
+    width:95%;
+    text-align: left;
+    margin-bottom:5px;
+}
+
+main{
+    margin-left:30%;  
+    width:70%;
+    background:rgb(238, 236, 236);
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+
+img{
+    display:block;
+    width:100%;
+}
+
+button{
+    background:none;
+    border-radius:2px;
+    font-size:16px;
+    padding:5px 15px;
+    cursor:pointer;
+    color:#140b03;  
+}
+
+ /* FONT STYLES*/
+
+ .bold span{
+    font-weight:bold;
+}
+
+.sender{
+    font-size:1.1rem;
+}
+
+.subjectline{
+    font-size:.95rem;
+}
+
+.preheader{
+    font-size:.8rem;
+}
+
+h3{
+    font-weight:bold;
+}
+
+.dynamic p{
+    padding-bottom:5px;
 }
 
 .name{
@@ -32,27 +71,12 @@ nav{
 }
 
 .dynamic{
-    border:5px solid green;
+    border:2px dotted green;
     margin-bottom:5px; 
 }
 
 .dynamic div{
     padding:10px 30px;
-}
-
-
-img{
-    width:100%;
-}
-
-button{
-    background:none;
-    border-radius:2px;
-    font-size:16px;
-    padding:5px 15px;
-    cursor:pointer;
-    color:#140b03;
-    
 }
 
 .active-button{
@@ -61,64 +85,40 @@ button{
     cursor:default;
 }
 
-.bold span{
-    font-weight:bold;
-}
 
-nav button{
-    display:block;
-    width:99%;
-    text-align: left;
-    margin-bottom:3px;
-}
 
-.sender{
-    font-size:18px;
-}
-
-.subjectline{
-    font-size:14px;
-}
-
-.preheader{
-    font-size:12px;
-}
-
-h3{
-    font-weight:bold;
-}
-
-.dynamic p{
-    padding-bottom:5px;
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62.5rem) {
     main{
         margin-left:0%;  
         width:100%;
       }
    
       nav{
+          margin-top:5px;
           position:relative;
           width:100%;
+          padding:0;
       }
 
-      .mobileView{
-        display:block;
-        height:auto;
+      nav button{
+        margin-left:2%;
+        width:96%;
+ 
     }
-    
 
-
+    main{
+        padding-top:0px;
+        padding-bottom:0px;
+        margin-top:2rem;
+        margin-bottom:2rem;
+      }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5rem) {
     .project{
         width:100%;
     }
     img{
         width:100%;
     }
-
-
 }
