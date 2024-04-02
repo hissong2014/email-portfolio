@@ -11,29 +11,43 @@
 </head>
 <body>
     <header></header>
-    <nav>
+    <nav class="navigation">
         <h1 class="name">Jason Hissong</h1>
-        
- 
         <button onclick="showProject1()" class="project1button active-button">
             <span class="sender">OZNATURALS</span><br>
             <span class="subjectline">Eye Cream</span><br>
             <span class="preheader">An email a part of an automated campaign which triggered if an individual visited the website and if they were not part of the campaign within the last 30 days. </span>
         </button>
-        <button class="project2button" class="bold" onclick="showProject2()">
+        <button class="project2button bold" onclick="showProject2()">
             <span class="sender">Lazartigue</span><br>
             <span class="subjectline">Welcome</span><br>
             <span class="preheader">The first email in the Welcome Series.</span>
         </button>
-        <button class="project3button" class="bold" onclick="showProject3()">
+        <button class="project3button bold" onclick="showProject3()">
             <span class="sender">Pupa Milano</span><br>
             <span class="subjectline">Eye Love To Save!</span><br>
             <span class="preheader">One time email deployment supporting a marketing initiative.</span>
+        </button>
+        <button class="project4button bold" onclick="showProject4()">
+            <span class="sender">Sanofi</span><br>
+            <span class="subjectline">Thyrogen RAI</span><br>
+            <span class="preheader">HTML Build</span>
+        </button>
+        <button class="project5button bold" onclick="showProject5()">
+            <span class="sender">Sanofi</span><br>
+            <span class="subjectline">Thyrogen Post-Operative Tg Evaluation</span><br>
+            <span class="preheader">HTML Build</span>
+        </button>
+        <button class="project6button bold" onclick="showProject6()">
+            <span class="sender">Viatris</span><br>
+            <span class="subjectline">Impeklo</span><br>
+            <span class="preheader">HTML Build</span>
         </button>
 
         
     </nav>
     <main id="emailBackground">
+        <div id="topOfProject"></div>
         <section id="project1" class="project">
             <img src="images/ozn-header.png" alt="">
             <div class="dynamic">
@@ -75,25 +89,63 @@
             </div>
             <img src="images/pupa-footer.png" alt="">
         </section>
+        <section id="project4" class="html-project">
+            <p class="codepen" data-height="800" data-default-tab="html" data-slug-hash="KKYXoNQ" data-user="jasonhissong" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/jasonhissong/pen/KKYXoNQ">
+                HTML Email Thyrogen 1</a> by Jason  (<a href="https://codepen.io/jasonhissong">@jasonhissong</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+        <section id="project5" class="html-project">
+            <p class="codepen" data-height="800"  data-default-tab="html" data-slug-hash="zYXPKVo" data-user="jasonhissong" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/jasonhissong/pen/zYXPKVo">
+                HTML Email Thyrogen 2</a> by Jason  (<a href="https://codepen.io/jasonhissong">@jasonhissong</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+        <section id="project6" class="html-project">
+            <p class="codepen" data-height="800" data-default-tab="html" data-slug-hash="XWQzNbp" data-user="jasonhissong" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/jasonhissong/pen/XWQzNbp">
+                HTML Email Impeklo</a> by Jason  (<a href="https://codepen.io/jasonhissong">@jasonhissong</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+              </p>
+              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </section>
     </main>
-    <nav class="bottomMobile">
+    <div class="mobileView navigation">
             <button onclick="showProject1()" class="project1button active-button">
                 <span class="sender">OZNATURALS</span><br>
                 <span class=subjectline">Eye Cream</span><br>
                 <span class="preheader">An email a part of an automated campaign which triggered if an individual visited the website and if they were not part of the campaign within the last 30 days. </span>
             </button>
-            <button class="project2button" class="bold" onclick="showProject2()">
+            <button class="project2button bold" onclick="showProject2()">
                 <span class="sender">Lazartigue</span><br>
                 <span class="subjectline">Welcome</span><br>
                 <span class="preheader">The first email in the Welcome Series.</span>
             </button>
-            <button class="project3button" class="bold" onclick="showProject3()">
+            <button class="project3button bold"  onclick="showProject3()">
                 <span class="sender">Pupa Milano</span><br>
                 <span class="subjectline">Eye Love To Save!</span><br>
                 <span class="preheader">One time email deployment supporting a marketing initiative.</span>
             </button>
-
+            <button class="project4button bold" onclick="showProject4()">
+                <span class="sender">Sanofi</span><br>
+                <span class="subjectline">Thyrogen RAI</span><br>
+                <span class="preheader">HTML Build</span>
+            </button>
+            <button class="project5button bold" onclick="showProject5()">
+                <span class="sender">Sanofi</span><br>
+                <span class="subjectline">Thyrogen Post-Operative Tg Evaluation</span><br>
+                <span class="preheader">HTML Build</span>
+            </button>
+            <button class="project6button bold" onclick="showProject6()">
+                <span class="sender">Viatris</span><br>
+                <span class="subjectline">Impeklo</span><br>
+                <span class="preheader">HTML Build</span>
+            </button>
         
-        </nav>
+        </div>
 </body>
 </html>

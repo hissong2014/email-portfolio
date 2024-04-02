@@ -1,18 +1,22 @@
-nav{
+.navigation{
     position:fixed;
     width:30%;
     padding:10px;
 }
 
-nav button{
+.navigation button{
     display:inline-block;
     width:95%;
     text-align: left;
     margin-bottom:5px;
 }
 
+.mobileView{
+    display:none;
+}
+
 main{
-    margin-left:30%;  
+    margin-left:30%;
     width:70%;
     background:rgb(238, 236, 236);
     padding-top:15px;
@@ -85,6 +89,10 @@ h3{
     cursor:default;
 }
 
+.html-project{
+    padding:20px 40px;
+}
+
 
 
 @media only screen and (max-width: 62.5rem) {
@@ -93,17 +101,16 @@ h3{
         width:100%;
       }
    
-      nav{
+      .navigation{
           margin-top:5px;
           position:relative;
           width:100%;
           padding:0;
       }
 
-      nav button{
+      .navigation button{
         margin-left:2%;
         width:96%;
- 
     }
 
     main{
@@ -112,6 +119,10 @@ h3{
         margin-top:2rem;
         margin-bottom:2rem;
       }
+
+      .mobileView{
+        display:block;
+    }
 }
 
 @media only screen and (max-width: 37.5rem) {
@@ -121,4 +132,5 @@ h3{
     img{
         width:100%;
     }
+
 }
